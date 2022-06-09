@@ -1,0 +1,7 @@
+#navbarSupportedContent{
+  justify-content: space-between;
+}
+
+.d-flex input{
+  margin-right: 10px;
+}
