@@ -2,15 +2,5 @@
 <hr>
 
 <div class="card-columns">
-
-    <div class="card animated fadeIn fast" *ngFor="let hero of heroes; let i = index">
-      <img class="card-img-top" [src]="hero.img" [alt]="hero.nombre">
-      <div class="card-body">
-        <h5 class="card-title">{{hero.nombre}}</h5>
-        <p class="card-text">{{hero.bio}}</p>
-        <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
-
-        <a [routerLink]="['/hero', i]" class="btn btn-outline-primary">Ver más...</a>
-      </div>
-    </div>
+  <app-target-heroes [hero]="hero" [index]="i" *ngFor="let hero of heroes; let i = index"></app-target-heroes>
 </div>

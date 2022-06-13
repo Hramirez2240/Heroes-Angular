@@ -1,0 +1,10 @@
+<h1>Resultados de búsqueda de: <small>{{termino}}</small></h1>
+<hr>
+
+<div class="card-columns" *ngIf="heroes.length > 0">
+  <app-target-heroes [hero]="hero" [index]="hero.id" *ngFor="let hero of heroes; let i = index"></app-target-heroes>
+</div>
+
+<div *ngIf="heroes.length == 0">
+  <h3>No se encontró ningún héroe con este resultado</h3>
+</div>
